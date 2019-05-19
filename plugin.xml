@@ -3,7 +3,7 @@
 	xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	id="cordova-plugin-streaming-media"
-	version="2.2.0">
+	version="2.2.1">
 
 	<name>StreamingMedia</name>
 
@@ -63,7 +63,7 @@
 		</config-file>
 		<config-file target="AndroidManifest.xml" parent="/manifest/application">
 			<activity android:configChanges="orientation|screenSize" android:name="com.hutchind.cordova.plugins.streamingmedia.SimpleAudioStream" android:label="Simple Audio Stream"></activity>
-			<activity android:configChanges="orientation|screenSize" android:name="com.hutchind.cordova.plugins.streamingmedia.SimpleVideoStream" android:label="Simple Video Stream"></activity>
+			<activity android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation" android:label="Simple Video Stream" android:name="com.hutchind.cordova.plugins.streamingmedia.SimpleVideoStream" android:resizeableActivity="true" android:supportsPictureInPicture="true" ></activity>
 		</config-file>
 		<source-file src="src/android/com/hutchind/cordova/plugins/streamingmedia/SimpleAudioStream.java" target-dir="src/com/hutchind/cordova/plugins/streamingmedia" />
 		<source-file src="src/android/com/hutchind/cordova/plugins/streamingmedia/SimpleVideoStream.java" target-dir="src/com/hutchind/cordova/plugins/streamingmedia" />
@@ -82,7 +82,7 @@
 		</config-file>
 		<config-file target="AndroidManifest.xml" parent="/manifest/application">
 			<activity android:configChanges="orientation|screenSize" android:name="com.hutchind.cordova.plugins.streamingmedia.SimpleAudioStream" android:label="Simple Audio Stream"></activity>
-			<activity android:configChanges="orientation|screenSize" android:name="com.hutchind.cordova.plugins.streamingmedia.SimpleVideoStream" android:label="Simple Video Stream"></activity>
+			<activity android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation" android:label="Simple Video Stream" android:name="com.hutchind.cordova.plugins.streamingmedia.SimpleVideoStream" android:resizeableActivity="true" android:supportsPictureInPicture="true" ></activity>
 		</config-file>
 		<source-file src="src/android/com/hutchind/cordova/plugins/streamingmedia/SimpleAudioStream.java" target-dir="src/com/hutchind/cordova/plugins/streamingmedia" />
 		<source-file src="src/android/com/hutchind/cordova/plugins/streamingmedia/SimpleVideoStream.java" target-dir="src/com/hutchind/cordova/plugins/streamingmedia" />
