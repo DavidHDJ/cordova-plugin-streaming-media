@@ -191,7 +191,12 @@ MediaPlayer.OnErrorListener, MediaPlayer.OnBufferingUpdateListener {
 		// If we're leaving, let's finish the activity
 		wrapItUp(RESULT_OK, null);
 	}
-
+	
+	@Override
+	public void onUserLeaveHint () {
+		enterPictureInPictureMode();
+	}
+	
 	@Override
 	public void onConfigurationChanged(Configuration newConfig) {
 		// The screen size changed or the orientation changed... don't restart the activity
