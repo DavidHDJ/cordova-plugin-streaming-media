@@ -9,6 +9,10 @@ This plugin allows you to stream audio and video in a fullscreen, native player 
 * 1.0.0 Works with Cordova 3.x
 * 1.0.1+ Works with Cordova >= 4.0
 
+## The special in this version
+
+The Android Player support the picture in picture Feature
+
 ## Installation
 
 ```
